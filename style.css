@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:0.7fr 14fr;
+    grid-template-rows:1fr 1.3fr 8fr ;
+    color: white;
+    
+}
+header{
+    background-color: black;
+    grid-row:1;
+    grid-column-start:1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+input{
+    width: 40%;
+    padding:8px;
+    background-color:rgb(36, 35, 35) ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding-left: 40px;
+    
+}
+header svg{
+    position: absolute;
+    bottom: 14px;
+    left: 30.5%;    
+}
+header .rond{
+    opacity: 0.4;
+}
+header .svg1{
+    position: absolute;
+    left: 96%;
+    padding: 6px;
+    background-color: rgb(45, 179, 179);
+    border-radius: 50%;
+    bottom: auto;
+    padding-top: 6px;
+
+}
+header span{
+    background-color: rgb(215, 42, 42);
+    border-radius: 100%;
+    padding: 5px;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    left: 97.8%;
+    top: 33px;
+    border: 1.5px solid black;
+}
+.nav-verticale{
+    background-color:black;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    font-size: 10px;
+    width: 100%;
+    
+}
+.nav-verticale .nav-verticale-start{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;   
+    align-items: center;
+   
+}
+.nav-verticale-end .vert{
+    border-radius: 4px;
+    background-color: rgb(80, 80, 200);
+    border: 1px solid white;
+    padding: 10px;
+    margin:auto;
+}
+.nav-verticale .nav-verticale-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;  
+}
+.nav-verticale .icone{
+    margin: 10px 0;
+ } 
+  .nav-verticale-start .icone:hover{
+    color: rgb(75, 75, 222);
+ }
+ .nav-verticale-start svg:hover{
+    fill:rgb(75, 75, 222);
+ }
+ .nav-verticale-start  .ver{
+    padding-left: 20%;
+ }
+ .nav-verticale-end .vert:hover{
+    border: 2px solid white;
+    fill: white;
+    
+ }
+ .nav-verticale-end:hover,.nav-verticale-end svg:hover{
+    fill:rgb(75, 75, 222);
+    color: rgb(75, 75, 222);
+ }
+.nav-horizontale{
+    background-color:rgb(36, 35, 35) ;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: white;
+    
+}
+.nav-horizontale-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    border-right: 2px solid white;
+    padding-right: 8px;
+}
+svg{
+    fill: white;
+    height: 25px
+}
+.nav-horizontale-menu .menu-droite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    font-size: 15px;
+    
+}
+.menu-gauche{
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-gauche span{
+    font-size: large;
+}
+.nav-horizontale-call{
+    width: 30%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    font-size: 15px;
+
+}
+.call-element select{
+    width: 130px  ;
+    margin-bottom: 15px;
+    background-color: brown;
+    border: 0;
+    border-radius: 3px;
+    text-align: start;
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 2px;
+    margin-right: 10px;
+    color: white;
+    
+}
+.inputgroup{
+    top: 10px;
+    position: relative;
+}
+
+.inputgroup svg{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+
+.menu-element, .call-element{
+    display: flex;
+    flex-direction: column;
+    margin:3px;
+    /* padding: 10px 2px; */
+    
+}
+main{
+    background-color: rgb(171, 155, 155);
+    grid-row-start:3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* gap: 2px; */
+    /* color: white; */
+
+}
+.participant{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+h2{
+    font-size: 18px;
+    margin: 10px;
+}
+.participant input{
+    padding: auto;
+    border-radius: 3px;
+    border: none;
+}
+i{
+
+   position: relative;
+   top: 25px;
+   left:74px ;
+}
+
+.invitation{
+    display: flex;
+    flex-direction:column;
+    /* gap: 10px;   */
+    font-size:small;
+    width: 100%;
+    /* margin: auto; */
+}
+ .reunion{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    /* width: 100%; */
+}
+.input-reunion{
+    padding-left: 3%;
+    width: 45%;
+}
+.reunion .triangle{
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-top-right-radius:30%;
+    transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+}
+.admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    gap: 10%;
+    
+}
+.invitation .input-text{
+    width: 90%;
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px;
+}
+.invitation .input-nom{
+    width: 81%;
+    margin:10px;
+    padding-left: 7%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.admin .admin1{
+    display: flex;
+    justify-content: flex-start;
+     align-items: center; 
+    gap: 8px;
+}
+
+.admin .W {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    background-color: rgb(178, 178, 203);
+    color: black;
+    border-radius: 50%;
+    /* text-align: center; */
+    /* padding: 15px; */
+    height:40px;
+    width: 40px;
+}
+.admin .RW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid wheat;
+    background-color: wheat;
+    color: black;
+    border-radius: 50%;
+    /* text-align: center; */
+    font-size: small;
+    /* padding: 15px; */
+    height:40px;
+    width: 40px;
+}
+
+.admin1 svg{
+    margin-left: 100%;
+}
+span, input, i{
+    display: block;
+}
+hr{
+    opacity: 0.5;
+
+}
+.camera img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.menu-element:hover{
+    border-bottom: 2px solid rgb(62, 62, 252);
+    border-radius: 3px;
+    text-shadow: 0px 0px 0px wheat;
+}
+.call-element:hover{
+    border-bottom: 2px solid rgb(62, 62, 252);
+    border-radius: 3px;
+}
+.call-element:hover .input-group{
+    border: 0px;
+}
+input:hover{
+    /* background-color: white; */
+    border: 2px solid white;
+}
